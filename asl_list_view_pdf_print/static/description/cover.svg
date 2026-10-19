@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B4F6D"/>
+      <stop offset="100%" style="stop-color:#4E2F45"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f3f4f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.25"/>
+    </filter>
+    <filter id="shadowSm" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="450" fill="url(#bg)"/>
+  <circle cx="60" cy="60" r="120" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="860" cy="410" r="160" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="780" cy="70" r="70" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- ===== LEFT: List View card ===== -->
+  <g transform="translate(95, 95)" filter="url(#shadow)">
+    <rect x="0" y="0" width="270" height="210" rx="14" fill="url(#card)" stroke="#e5e7eb" stroke-width="1"/>
+    <!-- top bar -->
+    <rect x="0" y="0" width="270" height="40" rx="14" fill="#7B4F6D"/>
+    <rect x="0" y="20" width="270" height="20" fill="#7B4F6D"/>
+    <!-- funnel (filter) icon -->
+    <path d="M16,14 L34,14 L27,23 L27,31 L23,28 L23,23 Z" fill="#ffffff"/>
+    <rect x="44" y="17" width="120" height="8" rx="4" fill="rgba(255,255,255,0.85)"/>
+    <!-- column header row -->
+    <g fill="#9aa0a6">
+      <rect x="16" y="54" width="60" height="7" rx="3"/>
+      <rect x="100" y="54" width="60" height="7" rx="3"/>
+      <rect x="190" y="54" width="64" height="7" rx="3"/>
+    </g>
+    <!-- data rows -->
+    <g>
+      <g fill="#dfe2e6">
+        <rect x="16" y="78"  width="64" height="6" rx="3"/><rect x="100" y="78"  width="52" height="6" rx="3"/><rect x="200" y="78"  width="54" height="6" rx="3"/>
+        <rect x="16" y="98"  width="58" height="6" rx="3"/><rect x="100" y="98"  width="58" height="6" rx="3"/><rect x="206" y="98"  width="48" height="6" rx="3"/>
+        <rect x="16" y="118" width="66" height="6" rx="3"/><rect x="100" y="118" width="48" height="6" rx="3"/><rect x="198" y="118" width="56" height="6" rx="3"/>
+        <rect x="16" y="138" width="54" height="6" rx="3"/><rect x="100" y="138" width="62" height="6" rx="3"/><rect x="204" y="138" width="50" height="6" rx="3"/>
+        <rect x="16" y="158" width="62" height="6" rx="3"/><rect x="100" y="158" width="50" height="6" rx="3"/><rect x="200" y="158" width="54" height="6" rx="3"/>
+      </g>
+      <line x1="16" y1="68"  x2="254" y2="68"  stroke="#eceef0" stroke-width="1"/>
+      <line x1="16" y1="88"  x2="254" y2="88"  stroke="#eceef0" stroke-width="1"/>
+      <line x1="16" y1="108" x2="254" y2="108" stroke="#eceef0" stroke-width="1"/>
+      <line x1="16" y1="128" x2="254" y2="128" stroke="#eceef0" stroke-width="1"/>
+      <line x1="16" y1="148" x2="254" y2="148" stroke="#eceef0" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ===== Arrow ===== -->
+  <g transform="translate(388, 200)" filter="url(#shadowSm)">
+    <path d="M0,-10 L34,-10 L34,-24 L66,0 L34,24 L34,10 L0,10 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- ===== RIGHT: PDF document ===== -->
+  <g transform="translate(495, 80)" filter="url(#shadow)">
+    <rect x="0" y="0" width="230" height="240" rx="12" fill="url(#card)" stroke="#e5e7eb" stroke-width="1"/>
+    <!-- folded corner -->
+    <path d="M186,0 L230,44 L186,44 Z" fill="#e2e5ea"/>
+    <path d="M186,0 L186,44 L230,44" fill="none" stroke="#cbd0d8" stroke-width="1.5"/>
+    <!-- PDF badge -->
+    <rect x="22" y="28" width="78" height="30" rx="6" fill="#D32F2F"/>
+    <text x="61" y="49" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold" font-family="Arial, Helvetica, sans-serif">PDF</text>
+    <!-- title line -->
+    <rect x="22" y="78" width="150" height="9" rx="4" fill="#c8ccd2"/>
+    <!-- table rows -->
+    <g>
+      <g fill="#7B4F6D"><circle cx="27" cy="108" r="4"/><circle cx="27" cy="130" r="4"/><circle cx="27" cy="152" r="4"/><circle cx="27" cy="174" r="4"/></g>
+      <g fill="#dfe2e6">
+        <rect x="40" y="105" width="92" height="6" rx="3"/><rect x="150" y="105" width="56" height="6" rx="3"/>
+        <rect x="40" y="127" width="80" height="6" rx="3"/><rect x="150" y="127" width="56" height="6" rx="3"/>
+        <rect x="40" y="149" width="96" height="6" rx="3"/><rect x="150" y="149" width="56" height="6" rx="3"/>
+        <rect x="40" y="171" width="74" height="6" rx="3"/><rect x="150" y="171" width="56" height="6" rx="3"/>
+      </g>
+    </g>
+    <!-- totals row -->
+    <rect x="18" y="192" width="194" height="30" rx="6" fill="#f0e8ee"/>
+    <text x="34" y="212" fill="#7B4F6D" font-size="15" font-weight="bold" font-family="Arial, Helvetica, sans-serif">&#931; Total</text>
+    <rect x="150" y="203" width="56" height="9" rx="4" fill="#7B4F6D"/>
+  </g>
+
+  <!-- success check -->
+  <g transform="translate(690, 286)" filter="url(#shadowSm)">
+    <circle cx="22" cy="22" r="22" fill="#22c55e"/>
+    <path d="M12,22 L19,29 L33,14" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="378" text-anchor="middle" fill="white" font-size="34" font-weight="bold" font-family="Arial, Helvetica, sans-serif">List View PDF Print</text>
+  <text x="450" y="410" text-anchor="middle" fill="rgba(255,255,255,0.88)" font-size="17" font-family="Arial, Helvetica, sans-serif">Any List View &#8594; Professional PDF  &#8226;  Filters  &#8226;  Auto Totals  &#8226;  One Click</text>
+
+  <!-- Version badges (single row, top-right) -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+    <g transform="translate(682, 26)"><rect width="62" height="26" rx="13" fill="rgba(255,255,255,0.18)"/><text x="31" y="17">v17.0</text></g>
+    <g transform="translate(750, 26)"><rect width="62" height="26" rx="13" fill="rgba(255,255,255,0.18)"/><text x="31" y="17">v18.0</text></g>
+    <g transform="translate(818, 26)"><rect width="62" height="26" rx="13" fill="rgba(255,255,255,0.18)"/><text x="31" y="17">v19.0</text></g>
+  </g>
+</svg>
